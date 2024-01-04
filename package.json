@@ -1,6 +1,6 @@
 {
   "name": "scrypt-bitcore-lib",
-  "version": "10.0.25",
+  "version": "10.0.26",
   "description": "A pure and powerful JavaScript Bitcoin library.",
   "author": "BitPay <dev@bitpay.com>, msinkec <mihael@scrypt.io>",
   "main": "index.js",
