@@ -225,6 +225,8 @@ describe('Interpreter', function() {
       verified.should.equal(true);
       verified = Interpreter().verify(Script('OP_0'), Script('OP_IF OP_VER OP_ELSE OP_1 OP_ENDIF'));
       verified.should.equal(true);
+      verified = Interpreter().verify(Script('2 0xaabb 2 0xccdd'), Script('OP_CAT 4 0xaabbccdd OP_EQUAL'));
+      verified.should.equal(true);
     });
 
     it('should verify these simple transaction', function() {
